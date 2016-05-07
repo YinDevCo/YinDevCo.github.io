@@ -1,0 +1,275 @@
+<!-- this is just to test page navigations -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YinDev GAMES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    
+<style>
+    .navbar {
+        background-color: black;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 25px;
+        letter-spacing: 5px;
+        font-weight: bold; 
+    }
+    .navbar-nav li a:hover {
+        color: lightgray! important;
+        text-decoration: underline;
+    }
+    .navbar-nav li a {
+        color: beige! important;
+        text-align: right;
+        font-size: 18px;
+    }
+    .navbar-brand{
+        padding: 0px ;
+    }
+    .bg-1 {
+        margin-top: 3px;
+        height: 25px;
+        background-color: dimgrey;
+}
+     aside {
+        background-color: gray; 
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 2px;
+        margin-top: 25px;
+        margin-bottom: 3px;
+        margin-right: 1px;
+    }
+    .left{
+        float: left;
+    }
+    .type{
+        text-align: center;
+        color: dimgrey;
+    }
+    li{
+        color: whitesmoke;
+    }
+    .right{
+        float: right;
+        padding: 5px;
+    }
+    .right:hover{
+        background-color: darkgrey;
+        border-style: dashed;
+        margin: 0px;
+    }
+    body{
+        font-family: "Courier New", Times, serif;
+        line-height: 1.8;
+        color: azure;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: lightgray;
+        height: 500px;
+        
+    }
+    .game-info{
+        background-color: slategrey;
+        margin-top: 5px;
+        padding-top: 25px;
+        padding-left: 100px;
+        text-align: center;
+    
+    }
+    section{
+        background-color: darkslategray;
+        padding-top: 10px;
+    }
+    .download{
+        padding: 10px;
+        padding-bottom: 20px;
+        background-color: gray;
+    }
+    .download .btn:hover{
+        color: white! important;
+        background-color: black;
+    }
+    h7{
+        font-size: 12px;
+        font-weight: lighter;
+        text-decoration: overline underline;
+        color: beige;
+        text-align: center;
+    }   
+    h2{
+        text-decoration: overline underline;
+        font-weight: bolder;
+        text-align: center;
+    }
+    h6{
+         text-decoration: overline underline;
+        font-weight: bolder;
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer{
+       background-color: black;
+        text-align: center;
+    }
+    .footer div{
+        display: inline-block;
+        padding: 15px;
+    }
+    footer h7:hover{
+         color: white! important;
+        background-color: dimgrey;
+    }
+   
+</style>
+</head>
+    
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="ELogo.png" class="img-circle" alt="Logo" width="105" height="100"></a>
+   
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign-Up</a></li>
+        <li><a href="#">Log-In</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid bg-1 text-center"> </div>
+<aside class="left">
+    <div class="search">
+    <h5>Search by:</h5>
+     
+    <div class="type">
+        <button type="button" class="type" data-toggle="collapse" data-target="#alpha">Game Titles <span class="glyphicon glyphicon-user">    
+    </span></button>
+ <div class="collapse navbar-collapse" id="alpha">
+      <ul class="left left">
+        <a href="pages/title.html" data-target="#A-E" ><li>A-E</li></a>
+        <a href="pages/title.html" data-target="#F" ><li>F</li></a>
+        <a href="pages/title.html" data-target="#G" ><li>G</li></a>
+        <a href="pages/title.html" data-target="#H" ><li>H</li></a>
+        <a href="pages/title.html" data-target="#I-K" ><li>I-K</li></a>
+        <a href="pages/title.html" data-target="#L" ><li>L</li></a>
+        <a href="pages/title.html" data-target="#M-R" ><li>M-R</li></a>
+        <a href="pages/title.html" data-target="#S" ><li>S</li></a>
+        <a href="pages/title.html" data-target="#T" ><li>T</li></a>
+        <a href="pages/title.html" data-target="#U" ><li>U</li></a>
+        <a href="pages/title.html" data-target="#V-Z" ><li>V-Z</li></a>
+      </ul>
+    </div>
+   </div>
+        
+   <div class="type">
+        <button type="button" class="type" data-toggle="collapse" data-target="#genre"> Genre/Types <span class="glyphicon glyphicon-user">    
+    </span></button>
+ <div class="collapse navbar-collapse" id="genre">
+      <ul class="left left">
+        <a href="pages/genre.html" data-target="#VN"><li>Visual Novel</li></a>
+        <a href="pages/genre.html" data-target="Iso"><li>Isometric</li></a>
+      </ul>
+    </div>
+   </div>
+        
+    <div class="type">
+        <button type="button" class="type" data-toggle="collapse" data-target="#dev">Developer(s)<span class="glyphicon glyphicon-user">    
+    </span></button>
+ <div class="collapse navbar-collapse" id="dev">
+      <ul class="left left">
+        <a href="pages/dev.html" data-target="#yin"><li>Yin</li></a>
+      </ul>
+    </div>
+   </div>
+        
+   <div class="type">
+        <button type="button" class="type" data-toggle="collapse" data-target="#draw"> Illustrator <span class="glyphicon glyphicon-user">    
+    </span></button>
+ <div class="collapse navbar-collapse" id="draw">
+      <ul class="left left">
+        <a href="pages/draw.html" data-target="#Xi"><li>Xi</li></a>
+        <a href="pages/draw.html" data-target="#Nat"><li>Natsuki</li></a>
+        <a href="pages/draw.html" data-target="#Mis"><li>Misora</li></a>
+        <a href="pages/draw.html" data-target="#Yin"><li>Yin</li></a>
+      </ul>
+    </div>
+   </div>
+        
+   <div class="type">
+        <button type="button" class="type" data-toggle="collapse" data-target="#story"> Story Maker <span class="glyphicon glyphicon-user">    
+    </span></button>
+ <div class="collapse navbar-collapse" id="story">
+      <ul class="left left">
+        <a href="pages/draw.html" data-target="#Xi"><li>Xi</li></a>
+        <a href="pages/draw.html" data-target="#Nat"><li>Natsuki</li></a>
+        <a href="pages/draw.html" data-target="#Mis"><li>Misora</li></a>
+        <a href="pages/draw.html" data-target="#Yin"><li>Yin</li></a>
+      </ul>
+    </div>
+   </div>
+
+</div>
+</aside>
+<aside class="right">
+    <a class="ads" href="ads.com"><img src="thumbs/new.jpg" alt="New Game" width="120" height="250"></a>
+</aside>
+    
+    <div class="game-info">
+    <img src="thumbs/6.jpg" width="300" height="250">
+    <h2>Sample Game Name</h2>
+    <section>
+    <h6>Game Discription Title</h6>
+    <p>Game Discription: Plot, instructions. Gameplay, etc.</p>
+     <div class="download">
+    <h5>Click to Download</h5>
+    <a href="#" class="btn btn-default btn-lg">DownLoad</a>
+   </div>
+    <h6>Credits</h6>
+    <p>Developer: Yin</p>
+    <p>Story Maker: Yin</p>
+    <p>Illustrator: Yin</p>
+    <p>Special Thanks to: (insert Sponsors)</p>
+    </section>
+    <p>THank you for playing, PLease leave a comment or email us ! vote a Game to be featured and be mentioned!</p>
+    </div>
+    
+</body>
+
+<footer>
+<div class="footer">
+<div class="contact" ><a href="Contact.html" class="btn type">
+   <h7>Contact Us</h7></a></div>
+<div class="rights">
+<h7>All rights reserved: YinDevCompany</h7>
+</div>
+<div class="info"><a href="Yindev.html" class="btn type">
+    <h7>About Us</h7></a></div>
+</div>    
+</footer>
+    
+</html>
