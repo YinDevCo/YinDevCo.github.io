@@ -5,15 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 
     
 <style>
+    
+/*Fixed style set */
+
+    /*NavBar Styles*/
     .navbar {
-        background-image: url(/navbar.jpg);
+        background-image: url(/main/navbar.jpg);
         background-attachment: fixed;
         padding-top: 15px;
         padding-bottom: 5px;
@@ -33,22 +37,27 @@
         color: beige! important;
         text-align: right;
         font-size: 15px;
-        background: rgba(122, 130, 136, 0.2)!important;
+        background: rgba(122, 130, 136, 0.5)!important;
         margin-left: 110px;
     }
     .navbar-brand{
         padding: 0px ;
     }
-    .bg-1 {
+    
+    /*Separator Container*/
+    .subnav {
         margin-top: 3px;
         height: 25px;
         background-color: dimgrey;
-}
+    }
+    .subnav h7:hover{
+        color: black! important;
+        background-color: white;
+    }
+    
+    /*Side panels*/
     aside {
         background-color: gray; 
-        padding-top: 2px;
-        padding-left: 10px;
-        padding-right: 10px;
         margin-left: 2px;
         margin-top: 25px;
         margin-bottom: 3px;
@@ -56,10 +65,13 @@
     }
     .left{
         float: left;
+        padding: 10px;
+        text-align: left;
     }
     .type{
         text-align: center;
         color: dimgrey;
+        padding: 2px;
     }
     li{
         color: beige;
@@ -70,30 +82,12 @@
     }
     .right:hover{
         background-color: ghostwhite;
-        border-style: dashed;
-        margin: 0px;
+        border-top-style:dashed;
+        border-bottom-style: dashed;
     }
-    section{
-        margin-top: 20px;
-        padding-top: 1px;
-        padding-bottom: 10px;
-        padding-left: 200px;
-        background: rgba(122, 130, 136, 0.2)!important;
-    }
-    .col-1-1 img{       
-        height:160px;
-        width: 250px;
-        padding: 3px;
-        background-color: beige;
-    }
-    footer h7:hover, .col-1-1 :hover{
-        color: white! important;
-        background-color: dimgrey;
-    }
-    .col-1-1{
-        display: inline-block;
-    }
-    body{
+    
+    /*Body Style*/
+     body{
         font-family: "Courier New", Times, serif;
         line-height: 1.8;
         color: black;
@@ -102,11 +96,57 @@
         padding-bottom: 5px;
         padding-left: 15px;
         padding-right: 20px;
-        background-image: url(/body.jpg);
-        background-size: auto;
-        
-        
+        background-image: url(/main/body.jpg);
+        background-size: auto;  
     }
+    
+    /*Footer*/
+   .footer{
+        background-size: cover;
+        background-image: url(/main/footer.jpg);
+        text-align: center;
+        height: 100px;
+        padding: 30px;
+    }
+    .subnav div,.footer div{
+        display: inline-block;
+    }    
+    footer h7:hover{
+         color: white! important;
+        background-color: dimgrey;
+    }
+
+    
+    /*Page Custom Styles*/
+    
+    .col-1-1{
+        display: inline-block;
+    }
+    .col-1-1 img{       
+        height:160px;
+        width: 250px;
+        padding: 3px;
+        background-color: beige;
+    }
+    .col-1-1 :hover{
+        color: white! important;
+        background-color: dimgrey;
+    }
+    .sortedGames{
+        font-weight: bold;
+        margin-left: 200px;
+        margin-right: 180px;
+        margin-bottom: 10px;
+        background: rgba(122, 130, 136, 0.5)!important;
+    }
+    
+    section{
+        margin-top: 20px;
+        padding-top: 1px;
+        padding-bottom: 10px;
+    }
+    
+    /*Text styles*/
     h7{
         font-size: 12px;
         font-weight: lighter;
@@ -118,38 +158,32 @@
         font-weight: bold;
         text-decoration: overline underline;
         color: whitesmoke;
-        background-color:black;
     }
     h5{
         font-size: 12px;
     }
-    h4{
+    h8{
         font-size: 15px;
         text-decoration: underline;
+        color: antiquewhite;
+    }
+    h3{
+        font-size: 20px;
+        color: white;
+        background: rgba(122, 130, 136, 0.3)!important;
     }
     p{
         text-align: center;
         color:black;
         font-weight: bolder;
-        background-color: lightgray
+        background-color: lightgray;
     }
-    .footer{
-        background-size: cover;
-        background-image: url(/footer.jpg);
-        text-align: center;
-        height: 100px;
-    }
-    .footer div{
-        display: inline-block;
-        padding: 15px;
-    }
-   
    
 </style>
 </head>
     
 <body>
-
+<!--Fixed Set: Body-->
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -158,18 +192,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href=".html"><img src="/ELogo.png" class="img-circle" alt="Logo" width="105" height="100"></a>
+      <a class="navbar-brand" href="/index.html"><img src="/main/logo.jpg" class="img-circle" alt="Logo" width="105" height="100"></a>
    
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign-Up</a></li>
-        <li><a href="#">Log-in</a></li>
+        <li><a href="/access/sign.html">Sign-Up</a></li>
+        <li><a href="/access/log.html">Log-in</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container-fluid bg-1 text-center"> </div>
+<div class="subnav">
+    <div class="read" >
+    <a href="/Read/read.html" class="btn type">
+    <h7>READ</h7></a>
+    </div>
+    <div class="watch" >
+    <a href="/watch/watch.html" class="btn type">
+    <h7>WATCH</h7></a>
+    </div>
+    <div class="play" >
+    <a href="/index.html" class="btn type">
+    <h7>PLAY</h7></a>
+    </div>
+</div>
 <aside class="left">
     <div class="search">
     <h5>Search by:</h5>
@@ -197,7 +244,7 @@
         <button type="button" class="type" data-toggle="collapse" data-target="#genre"> Genre/Types </button>
  <div class="collapse navbar-collapse" id="genre">
       <ul class="left left">
-        <a href="/pages/genre.html" data-target="#VN"><li>Visual Novel</li></a>
+        <a href="/pages/genre.html" data-target="#VN"><li>VN's</li></a>
         <a href="/pages/genre.html" data-target="Iso"><li>Isometric</li></a>
       </ul>
     </div>
@@ -241,6 +288,8 @@
 <aside class="right">
     <a class="ads" href="ads.com"><img src="/thumbs/new.jpg" alt="New Game" width="120" height="360"></a>
 </aside>
+    
+<!--Page Custom-->
 <div class="group">
     <div class="row">
     
@@ -344,15 +393,15 @@
         </div>
     
 </body>
-
+<!--Fixed Set: Footer-->
 <footer>
 <div class="footer">
-<div class="contact" ><a href="Contact.html" class="btn type">
+<div class="contact" ><a href="/access/contact.html" class="btn type">
    <h7>About Us</h7></a></div>
 <div class="rights">
 <h7>All rights reserved: YinDevCompany</h7>
 </div>
-<div class="info"><a href="Yindev.html" class="btn type">
+<div class="info"><a href="/access/join.html" class="btn type">
     <h7>Join Us</h7></a></div>
 </div>    
 </footer>
